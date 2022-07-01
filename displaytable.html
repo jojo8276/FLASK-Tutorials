@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<body>
+{% for i in sql %}
+<table border="1">
+
+   <tr>
+       <th>RollNo:</th>
+       <th>{{i[0]}}</th>
+   </tr>
+   <tr>
+       <th>Name:</th>
+       <th>{{i[1]}}</th>
+   </tr>
+   <tr>
+       <th>Age:</th>
+       <th>{{i[2]}}</th>
+   </tr>
+</table>
+
+{% endfor %}
+</body>
+</html>
